@@ -5,4 +5,13 @@ reg.output <- lm(y ~ x, mydata)
 summary(reg.output)
 # I can see that R-squared is 77.1%, and the regression coefficient of x is 
 #   significantly different from 0 at alpha = 5%.
-  
+
+# Plot y against x:
+plot(mydata$x, mydata$y)
+
+# Humm, let's try to use Bayesian regression, not sure....
+library(rstanarm) # allows fitting Bayesian models, the easy way
+bayesreg.output <- stan_glm(y ~ x, family = gaussian(), mydata)
+summary(bayesreg.output)
+plot(bayesreg.output)
+
