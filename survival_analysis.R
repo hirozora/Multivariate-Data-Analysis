@@ -1,7 +1,5 @@
 # Survival Analysis for Cancer Dataset (Simplified Version)
-# Only requires the survival package
 
-# Set CRAN mirror
 options(repos = c(CRAN = "https://cloud.r-project.org/"))
 
 # Install and load survival package
