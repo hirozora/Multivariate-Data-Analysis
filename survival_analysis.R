@@ -92,12 +92,6 @@ for (i in 1:nrow(ph_test$table)) {
   }
 }
 
-# Plot Schoenfeld residuals
-png("schoenfeld_residuals.png", width = 1200, height = 400)
-par(mfrow = c(1, 3))
-plot(ph_test)
-dev.off()
-cat("\nSchoenfeld residuals plot saved as 'schoenfeld_residuals.png'\n")
 
 # Summary of Results
 cat("\n=== Analysis Complete ===\n")
